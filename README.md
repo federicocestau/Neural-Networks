@@ -32,6 +32,11 @@ Let me briefly introduce you to loss functions and optimizers and summarize what
 •	Optimizers — are the algorithms used in backpropagation. The goal of an optimizer is to find the optimum set of kernels (weights) and biases to minimize the loss. Optimizers typically use a gradient descent approach, which allows them to iteratively find the “best” possible configuration of weights and biases. The most commonly used ones are SGD, ADAM, and RMSProp.
 Gradient descent is an iterative optimization algorithm used in machine learning to minimize a loss function. The loss function describes how well the model will perform given the current set of parameters (weights and biases), and gradient descent is used to find the best set of parameters.
 
+Key Differences Between loss functions ans metrics: 
+
+A loss function is implemented during training to optimize a learning function. It is not a judge of overall performance.
+A Criterion/Evaluation Metric is used after training to measure overall performance.
+
 •	In general, the wide selection of activation functions combined with the ability to add as many hidden nodes as we wish (provided we have sufficient computational power) means that Neural Networks can create a curve of any shape to fit the data.
 
 •	However, having this extreme flexibility may sometimes lead to overfitting the data. Hence, we must always ensure that we validate the model on the test/validation set before using it to make predictions.
